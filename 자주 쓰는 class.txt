@@ -1,0 +1,26 @@
+class nike {
+	int nai;
+	double ki;
+public :
+	void set(int x, double y) {
+		nai = x, ki = y;
+	}
+	void print( ) {
+		cout << "nai=" << nai << ", ki=" << ki << endl;
+	}
+};
+
+
+class str {
+	char *data;
+	int len;
+public :
+	str(char *x) {
+		len = strlen(x);
+		data = new char[len+1];
+		strcpy(data, x);
+	}
+	void print( ) {
+		cout << data << "(" << len << ")" << endl;
+	}
+};
